@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Our App "Electronica"</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            background-image: url('./img.jpg');
+            background-size: cover;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            color: rgb(252, 247, 247);
+        }
+
+        #downloadButton {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #downloadButton:hover {
+            background-color: #0056b3;
+        }
+
+        #logo {
+            width: 150px; /* Adjust the width of your logo as needed */
+            height: auto; /* Maintain the aspect ratio of the logo */
+            background: url('path/to/your/logo.png') no-repeat center center;
+            background-size: contain; /* Adjust as needed (contain, cover, etc.) */
+            border-radius: 50%;
+            border-color: #fff;
+        }
+
+        p{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./img2.png" alt="Your Logo" id="logo">
+        <h1>Download Our App "Electronica"</h1>
+        <p>Experience the best features of our app by downloading it now!</p>
+        <a href="#" id="downloadButton" onclick="downloadApp()">Download Now</a>
+    </div>
+
+    <script>
+        function downloadApp() {
+            // Replace 'YOUR_APP_DOWNLOAD_URL' with the actual URL for downloading your app
+            var appDownloadUrl = 'https://drive.google.com/file/d/1EAz2J3YC3vWjXyrKzqAvV9Xbwm0hRBkB/view?usp=drive_link';
+    
+            // Redirect the user to the app download URL
+            window.location.href = appDownloadUrl;
+        }
+    </script>
+    
+</body>
+</html>
